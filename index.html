@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./javascript.js" defer></script>
     <title>Document</title>
+    <style>
+        .restart {
+            scale: 0;
+        }
+
+        .restart.active {
+            scale: 1;
+        }
+    </style>
 </head>
 <body>
-    <script src="./javascript.js"></script>
+    <div class="score-board">
+        <div class="player">
+            Player: 0
+        </div>
+        <div class="computer">
+            Computer: 0
+        </div>
+    </div>
+    <div class="btn-container">
+        <button id="btn1">rock</button>
+        <button id="btn2">paper</button>
+        <button id="btn3">scissors</button>
+    </div>
+    <div class="restart">
+        <button id="restart-btn">restart</button>
+    </div>
 </body>
 </html>
